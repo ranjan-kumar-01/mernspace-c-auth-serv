@@ -1,0 +1,20 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "The user auth management service",
+  "homepage": "https://github.com/ranjan-kumar-01/mernspace-c-auth-serv#readme",
+  "bugs": {
+    "url": "https://github.com/ranjan-kumar-01/mernspace-c-auth-serv/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjan-kumar-01/mernspace-c-auth-serv.git"
+  },
+  "author": "Ranjan Kumar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/server.js"
+  }
+}
