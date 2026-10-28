@@ -1,46 +1,51 @@
 {
-  "lint-staged": {
-    "*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
-  },
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "The user auth management service",
-  "homepage": "https://github.com/ranjan-kumar-01/mernspace-c-auth-serv#readme",
-  "bugs": {
-    "url": "https://github.com/ranjan-kumar-01/mernspace-c-auth-serv/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ranjan-kumar-01/mernspace-c-auth-serv.git"
-  },
-  "author": "Ranjan Kumar",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node src/server.js",
-    "format:fix": "prettier . --write",
-    "format:check": "prettier . --check",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "lint:check": "eslint .",
-    "prepare": "husky"
-  },
-  "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@types/node": "^26.6.5",
-    "eslint": "^10.13.0",
-    "globals": "^17.13.0",
-    "husky": "^9.1.7",
-    "jiti": "^2.7.0",
-    "lint-staged": "^17.6.0",
-    "prettier": "3.9.10",
-    "typescript": "5.9",
-    "typescript-eslint": "^8.72.1"
-  },
-  "dependencies": {
-    "dotenv": "^18.0.9"
-  }
+    "lint-staged": {
+        "*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ]
+    },
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "The user auth management service",
+    "homepage": "https://github.com/ranjan-kumar-01/mernspace-c-auth-serv#readme",
+    "bugs": {
+        "url": "https://github.com/ranjan-kumar-01/mernspace-c-auth-serv/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ranjan-kumar-01/mernspace-c-auth-serv.git"
+    },
+    "author": "Ranjan Kumar",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsx watch src/server.ts",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "lint:check": "eslint .",
+        "prepare": "husky"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@types/express": "^5.0.6",
+        "@types/node": "^26.6.5",
+        "eslint": "^10.13.0",
+        "globals": "^17.13.0",
+        "husky": "^9.1.7",
+        "jiti": "^2.7.0",
+        "lint-staged": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "3.9.10",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.23.15",
+        "typescript": "5.9",
+        "typescript-eslint": "^8.72.1"
+    },
+    "dependencies": {
+        "dotenv": "^18.0.9",
+        "express": "^5.3.0"
+    }
 }
